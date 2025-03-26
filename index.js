@@ -5,7 +5,8 @@ import random from "random";
 
 const path = "./data.json";
 
-const markCommit = (x, y) => {
+const markCommit = (n) => {
+  if(n==0) return simpleGit.push();
   const date = moment()
     .subtract(1, "y")
     .add(1, "d")
